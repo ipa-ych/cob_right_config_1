@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: cob_right_arm_description
+    relative_path: urdf/cob_right_arm_0415.urdf
+  srdf:
+    relative_path: config/right_arm.srdf
+  package_settings:
+    author_name: YuzhangChen
+    author_email: cyz12121@126.com
+    generated_timestamp: 1713189278
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
